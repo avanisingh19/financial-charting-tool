@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/indicators/indicators-all.js"></script>
+	<script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/stock/indicators/regressions.js"></script>
+	<script src="js/indicatorsConfig.js"></script>
+
+<script src="js/app.js"></script>
+</head>
+<body>
+
+<div id="controls">
+    <div class="control-group">
+        <label for="timeframe">Timeframe (ms):</label>
+        <select id="timeframe" disabled>
+            <option value="50">50 ms</option>
+            <option value="100">100 ms</option>
+            <option value="1000" selected>1 Sec</option>
+            <option value="5000">5 Sec</option>
+            <option value="10000">10 Sec</option>
+            <option value="60000">1 Min</option>
+            <option value="300000">5 Min</option>
+            <option value="600000">10 Min</option>
+        </select>
+    </div>
+	<div id="file-upload-container" class="control-group">
+		<label for="file-upload">Upload CSV:</label>
+		<input type="file" id="file-upload" accept=".csv">
+	</div>
+
+    <div class="control-group">
+        <label for="indicator">Select Indicator:</label>
+        <select id="indicator" disabled>
+            <option value="default">Select</option>
+            <option value="sma">SMA</option>
+            <option value="ema">EMA</option>
+			<option value="dema">DEMA</option>
+			<option value="wma">WMA</option>
+            <option value="rsi">RSI</option> 
+            <option value="macd">MACD</option>
+            <option value="roc">ROC</option>
+            <option value="bb">Bollinger Bands</option>
+            <option value="atr">ATR</option>
+            <option value="stochastic">Stochastic</option>
+            <option value="cci">CCI</option>
+            <option value="dmi">DMI</option>
+            <option value="momentum">Momentum</option>
+            <option value="williamsr">Williams %R</option>
+
+        </select>
+
+        <div id="indicator-parameters">
+        </div>
+        
+	<button id="apply-indicator">Apply</button>
+	<button id="remove-indicator" style="margin-left: 3px;">Remove</button>
+    </div>
+</div>
+
+<!-- Chart container -->
+<div id="container"></div>
+
+</body>
+</html>       
