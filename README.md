@@ -2,6 +2,8 @@
 
 A web-based financial charting application for visualizing historical OHLC market data with candlestick charts and technical indicators.
 
+CAN WORK WITH TBT DATA AND IS TESTED ON THAT TOO.
+
 ## Features
 
 - Upload OHLC CSV files
