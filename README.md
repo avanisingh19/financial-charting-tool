@@ -30,19 +30,6 @@ CAN WORK WITH TBT DATA AND IS TESTED ON THAT TOO.
 - JavaScript
 - Highcharts Stock
 
-## Screenshots
-
-(Add screenshots here)
-
-## Future Improvements
-
-- Live WebSocket feed
-- Drawing tools
-- Volume Profile
-- VWAP
-- Market Replay
-- Dark Theme
-
 ## Author
 
 Avani Singh
